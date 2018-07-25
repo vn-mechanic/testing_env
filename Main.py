@@ -7,7 +7,8 @@ import telebot
 #server = Flask(__name__)
 
 token = '668673628:AAHmhNZDN9qdO2-Aqb4ogPV-tbJd2flbN7s'
-bot = telebot.TeleBot(token)
+token2 = "562189430:AAG9Gx26wRCvH8Jeb-mB11tEkWu2FjaLitU"
+bot = telebot.TeleBot(token2)
 list_of_participants = []
 
 @bot.message_handler(content_types=["text"])
