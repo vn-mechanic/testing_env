@@ -2,8 +2,8 @@ from random import sample
 import telebot
 import os
 
-token = os.environ['token']
-bot = telebot.TeleBot(token)
+#token = os.environ['token']
+bot = telebot.TeleBot('668673628:AAFtDeSMCjXp7xioE2retTrRqYfC-q2IQxo')
 list_of_participants = []
 
 @bot.message_handler(content_types=["text"])
