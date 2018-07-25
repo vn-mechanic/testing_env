@@ -1,12 +1,12 @@
 from random import sample
 import telebot
-#import os
+import os
 #from flask import Flask, request
 
 
 #server = Flask(__name__)
 
-token = '668673628:AAHmhNZDN9qdO2-Aqb4ogPV-tbJd2flbN7s'
+token = os.environ['token']
 bot = telebot.TeleBot(token)
 list_of_participants = []
 
@@ -41,4 +41,5 @@ server.run(host="127.0.0.1", port=os.environ.get('PORT', 5000))'''
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
+
 
