@@ -4,4 +4,3 @@ idna==2.7
 requests==2.19.1
 urllib3==1.23
 pyTelegramBotAPI==3.5.2
-random
