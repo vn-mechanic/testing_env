@@ -41,7 +41,7 @@ def send_welcome(message):
                                   "Ще одне повідомлення і я тобі поставлю "+str(random_number),), 1)
 
         # TODO Add Murchik user.id
-        elif message.from_user.id == 1: # Murchik script
+        elif message.from_user.id == 372106864: # Murchik script
             random_number = randint(-10, 10)
             random_text = sample(("Мурчик лох", "Мурчик, ща получиш",
                                   "Тікай з села, ща покличу Пашу", "Мурчик, задача на +6/-20.\n Ти лох?",
