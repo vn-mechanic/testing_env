@@ -9,7 +9,7 @@ list_of_participants = []
 
 @bot.message_handler(content_types=["text"])
 def send_welcome(message):
-<<<<<<< HEAD
+
     #if message.chat.id != 119637031:
 
         #bot.send_message(119637031, message.text)
@@ -18,34 +18,16 @@ def send_welcome(message):
     if "МАРІК" in str(message.text.upper()) or "МАРИК" in str(message.text.upper()):
 
         if message.from_user.id == 392901615:
-=======
-    if message.chat.id != 119637031:
-
-        bot.send_message(119637031, message.text)
-        bot.send_message(119637031, message.from_user)
-
-    if "МАРІК" in str(message.text.upper()) or "МАРИК" in str(message.text.upper()):
-
-        if message.from_user.username == "autumn90s":
->>>>>>> 6683beb48794e639aef2a8dbd0e166f49ff2e582
             random_number = randint(0, 1)
             if random_number == 0:
                 bot.reply_to(message, "Аню, ви так сьогодні гарно виглядаєте...")
                 bot.send_message(message.chat.id, "...біля дошки")
             else:
-<<<<<<< HEAD
                 bot.send_message(message.chat.id, "@" + str(message.from_user.username) + " хочеш тортика?")
 
         elif message.from_user.id == 382410466:
             random_text = sample(("Хочеш тортика? виддай 60 грывен)())00)", "Чому тебе сьогодні не було на парі?",
                                   "Лєра го в лс", "Лєра, підеш завтра до дошки?"), 1)
-=======
-                bot.send_message(message.chat.id, "@autumn90s хочеш тортика?")
-
-        elif message.from_user.username == "d15hw45h3r":
-            random_text = sample(("Хочеш тортика? виддай 27 грывен)())00)", "Чому тебе сьогодні не було на парі?",
-                                  "Лєра го в лс"), 1)
->>>>>>> 6683beb48794e639aef2a8dbd0e166f49ff2e582
             bot.reply_to(message, random_text)
 
         else:
