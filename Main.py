@@ -13,7 +13,7 @@ def send_welcome(message):
         bot.send_message(os.environ["chachat"], message.text)
         bot.send_message(os.environ["chachat"], message.from_user)
 
-    if "МАРІК" in str(message.text.upper()) or "МАРИК" in str(message.text.upper()):
+    if "МАРІК" in str(message.text.upper()) or "МАРИК" in str(message.text.upper()) or "MARIK" in str(message.text.upper()):
 
         if message.from_user.id == 392901615: # ania.me script
             random_number_0 = randint(0, 1)
@@ -39,8 +39,8 @@ def send_welcome(message):
                                   "Це легко розв\'язується методом честної корупції",
                                   "Підеш наступного понеділка до дошки?",
                                   "Ще одне повідомлення і я тобі поставлю "+str(random_number),), 1)
+            bot.reply_to(message, random_text)
 
-        # TODO Add Murchik user.id
         elif message.from_user.id == 372106864: # Murchik script
             random_number = randint(-10, 10)
             random_text = sample(("Мурчик лох", "Мурчик, ща получиш",
@@ -51,8 +51,7 @@ def send_welcome(message):
                                   "Підеш наступного понеділка до дошки?"), 1)
             bot.reply_to(message, random_text)
 
-        # TODO Add Rymlianyn user.id
-        elif message.from_user.username == "quppeq": # Rymlianyn script
+        elif message.from_user.id == 405633723: # Rymlianyn script
             random_number = randint(-10,10)
             random_text = sample(("Борис, з моїми лабками барісь", "Борис, погнали задачу пвп +5/-1",
                                   "Ще одне повідомлення і я тобі поставлю "+str(random_number),
