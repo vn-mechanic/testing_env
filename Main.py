@@ -42,7 +42,7 @@ def send_welcome(message):
             bot.reply_to(message, random_text)
 
         # TODO Add Murchik user.id
-        elif message.from_user.id == 1: # Murchik script
+        elif message.from_user.id == 372106864: # Murchik script
             random_number = randint(-10, 10)
             random_text = sample(("Мурчик лох", "Мурчик, ща получиш",
                                   "Тікай з села, ща покличу Пашу", "Мурчик, задача на +6/-20.\n Ти лох?",
