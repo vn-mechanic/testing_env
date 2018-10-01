@@ -39,7 +39,6 @@ def send_welcome(message):
                                   "Це легко розв\'язується методом честної корупції",
                                   "Підеш наступного понеділка до дошки?",
                                   "Ще одне повідомлення і я тобі поставлю "+str(random_number),), 1)
-            bot.reply_to(message, random_text)
 
         # TODO Add Murchik user.id
         elif message.from_user.id == 372106864: # Murchik script
