@@ -45,6 +45,7 @@ def send_welcome(message):
                                   "Ще одне повідомлення і я тобі поставлю "+str(random_number),), 1)
             bot.reply_to(message, random_text)
 
+
         elif message.from_user.id == murchik: # Murchik script
             random_number = randint(-10, 10)
             random_text = sample(("Мурчик лох", "Мурчик, ща получиш",
@@ -55,6 +56,7 @@ def send_welcome(message):
                                   "Підеш наступного понеділка до дошки?"), 1)
             bot.reply_to(message, random_text)
 
+            
         elif message.from_user.id == rymlianyn: # Rymlianyn script
             random_number = randint(-10,10)
             random_text = sample(("Борис, з моїми лабками барісь", "Борис, погнали задачу пвп +5/-1",
